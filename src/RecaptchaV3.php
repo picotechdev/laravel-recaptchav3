@@ -45,6 +45,9 @@ class RecaptchaV3
      */
     public function __construct(Repository $config, Client $client, Request $request)
     {
+        if(env('APP_ENV') =='local'){
+            $client->setDefaultOption('verify', false);
+        }
         $this->secret = $config['recaptchav3']['secret'];
         $this->sitekey = $config['recaptchav3']['sitekey'];
         $this->origin = $config['recaptchav3']['origin'] ?? 'https://www.google.com/recaptcha';
