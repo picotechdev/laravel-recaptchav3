@@ -15,7 +15,7 @@ Laravel package for Google's [Recaptcha V3](https://developers.google.com/recapt
 
 To get started, use Composer to add the package to your project's dependencies:
 
-    composer require josiasmontag/laravel-recaptchav3
+    composer require picotechdev/laravel-recaptchav3
 
 
 Add `RECAPTCHAV3_SITEKEY` and `RECAPTCHAV3_SECRET` to your `.env` file. (You can get them [here](https://www.google.com/recaptcha/admin#list))
